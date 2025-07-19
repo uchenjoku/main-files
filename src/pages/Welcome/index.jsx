@@ -39,7 +39,7 @@ function Welcome() {
                             </li>
                             <li className="flex-grow-1">
                                 <a href="https://www.addevent.com/event/vy26204727" title="" target="_blank" rel="noopener noreferrer" onClick={() => trackLinkClick('rsvp')} >
-                                    <label className="btn btn-light flex-column w-100" htmlFor="confirm"><span className="w-100 small mb-n3 pb-1">Confirm</span>Attendance</label>
+                                    <label className="btn btn-light flex-column w-100"><span className="w-100 small mb-n3 pb-1">Confirm</span>Attendance</label>
                                 </a>                                
                             </li>
                            
@@ -47,8 +47,8 @@ function Welcome() {
                     </Col>
                 </Row>
                 <div className="mt-4">                  
-                    <a className="btn btn-pill btn-rg btn-primary" href="mailto:media@amcf.org.au">
-							  <MailIcon />
+                    <a className="btn btn-pill btn-rg btn-primary" href="mailto:media@amcf.org.au" onClick={() => trackLinkClick('contact-us')}>
+							          <MailIcon />
                         <span>Contact Us</span>
                     </a>                      
                 </div>

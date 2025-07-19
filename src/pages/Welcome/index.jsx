@@ -2,8 +2,6 @@ import React from 'react';
 import Layout from '../../layout/main'
 import {  Col, Container, Row } from 'react-bootstrap';
 import { LogoLink } from '../../components';
-import { SendFill } from 'react-bootstrap-icons';
-import { Link } from 'react-router-dom';
 import { MapPin, CalendarDays, MailIcon} from "lucide-react";
 
 function Welcome() {

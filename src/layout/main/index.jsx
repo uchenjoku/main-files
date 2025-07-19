@@ -16,7 +16,7 @@ function Default({title,content, fullscreen, footer, ...props}) {
   return (
     <HelmetProvider>
       <Helmet>
-          <title>{`${title ? title + " | " : '' }ConnectMe | Chat Application React Template`}</title>
+          <title>{`${title ? title + " | " : '' }2025 | African Music and Cultural Festival`}</title>
       </Helmet>
       <AppRoot>     
         <AppContent className={contentClass}>

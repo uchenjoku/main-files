@@ -3,7 +3,7 @@ import Layout from '../../layout/main'
 import {  Col, Container, Row } from 'react-bootstrap';
 import { LogoLink } from '../../components';
 import { MapPin, CalendarDays, MailIcon} from "lucide-react";
-
+import { trackLinkClick } from '../../lib/analytics';
 function Welcome() {
   return (
     <Layout title="Welcome" content="tyn-content-page" footer={true}>
@@ -21,23 +21,24 @@ function Welcome() {
                     <Col xl="5">
                         <ul className="d-inline-flex flex-wrap bg-white p-2 rounded-3 justify-content-center gap gap-2">
                              <li className="flex-grow-1">
-                                  <a href="/amcf2025.ics" download>
+                                  <a href="/amcf2025.ics" download   rel="noopener noreferrer" onClick={() => trackLinkClick('download-ics')}>
                                     <label className="btn btn-light flex-column w-100" ><span className="w-100 small mb-n3 pb-1">Save to </span>Apple/Outlook</label>
                                   </a>                               
                             </li>
-                            
                             <li className="flex-grow-1">
                                
                                 <a
                                   href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=African+Music+%26+Cultural+Festival+2025&dates=20251121T010000Z/20251123T100000Z&details=Celebrate+Africa+with+music%2C+dance%2C+food%2C+fashion+%26+more+at+Fed+Square+Melbourne%21&location=Federation+Square%2C+Melbourne&sf=true&output=xml&recur=RRULE:FREQ=DAILY;COUNT=1&trp=false&reminder=60"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={() => trackLinkClick('save-to-google-calendar')}
+                                    title="Save to Google Calendar"
                                 > 
                                     <label className="btn btn-light flex-column w-100"><span className="w-100 small mb-n3 pb-1">Save to</span>Google Calendar</label>
                                 </a>                               
                             </li>
                             <li className="flex-grow-1">
-                                <a href="https://www.addevent.com/event/vy26204727" title="" target="_blank">
+                                <a href="https://www.addevent.com/event/vy26204727" title="" target="_blank" rel="noopener noreferrer" onClick={() => trackLinkClick('rsvp')} >
                                     <label className="btn btn-light flex-column w-100" htmlFor="confirm"><span className="w-100 small mb-n3 pb-1">Confirm</span>Attendance</label>
                                 </a>                                
                             </li>

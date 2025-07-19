@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import classNames from 'classnames';
 import Logo from './Logo';
 import { LogoFull } from './LogoFull';
-import AmcfLogo from '../../assets/images/amcf-logo.png';
 
 function LogoLink({to, full, size}) {
   const wrapperClass = classNames({
@@ -11,7 +10,7 @@ function LogoLink({to, full, size}) {
     [`tyn-logo-${size}`] : size
   })
   return (
-    <Link to={to} className={wrapperClass}>{full ? <LogoFull /> :  <img src={AmcfLogo} alt="logo" />}</Link>
+    <Link to={to} className={wrapperClass}>{full ? <LogoFull /> :  <LogoFull />}</Link>
   )
 }
 

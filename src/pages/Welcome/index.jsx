@@ -4,7 +4,7 @@ import {  Col, Container, Row } from 'react-bootstrap';
 import { LogoLink } from '../../components';
 import { SendFill } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
-import { MapPin, CalendarDays} from "lucide-react";
+import { MapPin, CalendarDays, MailIcon} from "lucide-react";
 
 function Welcome() {
   return (
@@ -12,7 +12,7 @@ function Welcome() {
       <div className="tyn-main">
           <Container>
             <div className="tyn-text-block text-center pb-4">
-                <LogoLink />
+                <LogoLink/>
                 <h1 className="mt-3">African Music & Cultural Festival 2025</h1>
                 <p><b>Free Event</b> - Experience the rhythm, flavours, and spirit of Africa</p>
                 <p className="flex justify-center items-center gap-2 mb-6">
@@ -22,10 +22,12 @@ function Welcome() {
                 <Row className="justify-content-center">
                     <Col xl="5">
                         <ul className="d-inline-flex flex-wrap bg-white p-2 rounded-3 justify-content-center gap gap-2">
-                            <li className="flex-grow-1">
-                                <input type="radio" className="btn-check" name="convotype" id="confirm" defaultChecked />
-                                <label className="btn btn-light flex-column w-100" htmlFor="confirm"><span className="w-100 small mb-n3 pb-1">Confirm</span>Attendance</label>
+                             <li className="flex-grow-1">
+                                  <a href="/amcf2025.ics" download>
+                                    <label className="btn btn-light flex-column w-100" ><span className="w-100 small mb-n3 pb-1">Save to </span>Apple/Outlook</label>
+                                  </a>                               
                             </li>
+                            
                             <li className="flex-grow-1">
                                
                                 <a
@@ -33,23 +35,23 @@ function Welcome() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 > 
-                                    <label className="btn btn-light flex-column w-100"><span className="w-100 small mb-n3 pb-1">Add to</span>Google Calendar</label>
-                                </a>
-                               
+                                    <label className="btn btn-light flex-column w-100"><span className="w-100 small mb-n3 pb-1">Save to</span>Google Calendar</label>
+                                </a>                               
                             </li>
                             <li className="flex-grow-1">
-                                  <a href="/amcf2025.ics" download>
-                                    <label className="btn btn-light flex-column w-100" ><span className="w-100 small mb-n3 pb-1">Add to Apple </span>Outlook Calendar</label>
-                                  </a>                               
+                                <a href="https://www.addevent.com/event/vy26204727" title="" target="_blank">
+                                    <label className="btn btn-light flex-column w-100" htmlFor="confirm"><span className="w-100 small mb-n3 pb-1">Confirm</span>Attendance</label>
+                                </a>                                
                             </li>
+                           
                         </ul>
                     </Col>
                 </Row>
-                <div className="mt-4">
-                    <Link to="/chatbot" className="btn btn-pill btn-rg btn-primary">
-                        <SendFill />
-                        <span>Start Talking</span>
-                    </Link>
+                <div className="mt-4">                  
+                    <a className="btn btn-pill btn-rg btn-primary" href="mailto:media@amcf.org.au">
+							  <MailIcon />
+                        <span>Contact Us</span>
+                    </a>                      
                 </div>
             </div>
           </Container>

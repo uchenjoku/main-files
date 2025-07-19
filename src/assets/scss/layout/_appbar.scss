@@ -6,7 +6,7 @@ $appbar-nav-gap-x:                    $body-gap-x;
 
 .#{$app-prefix}logo{
     display: inline-flex;
-    height: 32px;
+    height: 120px;
     svg,img{
         height: 100%;
         color: var(--#{$prefix}gray-800);
@@ -100,7 +100,7 @@ $appbar-nav-gap-x:                    $body-gap-x;
         display: inline-flex;
         height: 120px;
         &-sm{
-            height: 32px;
+            height: 100px;
         }
         svg,img{
             height: 100%;

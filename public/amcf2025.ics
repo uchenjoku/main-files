@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//African Music & Cultural Festival//AMCF2025//EN
+BEGIN:VEVENT
+UID:amcf2025@amcf.com
+DTSTAMP:20250717T000000Z
+DTSTART:20251121T010000Z
+DTEND:20251123T100000Z
+SUMMARY:African Music & Cultural Festival 2025
+DESCRIPTION:Celebrate Africa with music, dance, food, fashion & more at Fed Square Melbourne!
+LOCATION:Federation Square, Melbourne
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Reminder: AMCF2025 starts in one week!
+END:VALARM
+END:VEVENT
+END:VCALENDAR

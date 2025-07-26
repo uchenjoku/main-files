@@ -11,7 +11,7 @@ export default function DigitalCard({ title, subtitle, qrValue }) {
         <p className="qr-caption">Scan to RSVP or Learn More</p>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .card-container {
           display: flex;
           justify-content: center;

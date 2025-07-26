@@ -9,7 +9,7 @@ import DigitalCard from '../../components/QR/DigitalCard';
     }
 
 const sharedBy = getQueryParam('fullname') || 'Guest';
-const qrValue = `/?fullname=${encodeURIComponent(sharedBy)}`;
+const qrValue = `https://rsvp.amcf.au/?fullname=${encodeURIComponent(sharedBy)}`;
 
   return (
     <div>

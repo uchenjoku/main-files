@@ -13,19 +13,19 @@ import Generate from '../pages/Qr/generate';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Welcome />,
+    element: <Welcome />
   },
    {
     path: "/generate",
-    element: <Generate />,
+    element: <Generate />
   },
   {
     path: "/qr",
-    element: <Qr />,
+    element: <Qr/>
   },
     {
     path: "*",
-    element: <NotFound />,
+    element: <NotFound />
   }
 ]);
 

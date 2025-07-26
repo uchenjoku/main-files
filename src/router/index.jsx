@@ -15,10 +15,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <Welcome />,
   },
-  {
-    path: "*",
-    element: <NotFound />,
-  },
    {
     path: "/generate",
     element: <Generate />,
@@ -26,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/qr",
     element: <Qr />,
+  },
+    {
+    path: "*",
+    element: <NotFound />,
   }
 ]);
 

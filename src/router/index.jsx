@@ -9,10 +9,6 @@ import Welcome from '../pages/Welcome';
 import NotFound from '../pages/NotFound';
 import Generate from '../pages/Qr/generate';
 import Qr from '../pages/Qr';
-import '../pages/Welcome';
-import '../pages/NotFound';
-import '../pages/Qr/generate';
-import '../pages/Qr';
 
 const router = createBrowserRouter([
   {

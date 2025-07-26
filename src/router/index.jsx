@@ -11,10 +11,7 @@ import Generate from '../pages/Qr/generate';
 import Qr from '../pages/Qr';
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Welcome />
-  },
+
   {
     path: "/generate",
     element: <Generate />
@@ -26,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "*",
     element: <NotFound />
+  },
+   {
+    path: "/",
+    element: <Welcome />
   }
 ]
 );

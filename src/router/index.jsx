@@ -7,8 +7,8 @@ import {
 
 import Welcome from '../pages/Welcome';
 import NotFound from '../pages/NotFound';
-import Qr from '../pages/Qr';
 import Generate from '../pages/Qr/generate';
+import Qr from '../pages/Qr';
 
 const router = createBrowserRouter([
   {

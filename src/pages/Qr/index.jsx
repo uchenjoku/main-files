@@ -16,7 +16,7 @@ const qrValue = `https://rsvp.amcf.au/?fullname=${encodeURIComponent(sharedBy)}`
         <DigitalCard
           title="African Music & Cultural Festival 2025"
       
-        subtitle="Celebrate African Culture in Melbourne"
+        subtitle="Celebrating Diversity and Harmony"
         qrValue={qrValue} />
     </div>
   );

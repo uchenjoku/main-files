@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Welcome />
   },
-   {
+  {
     path: "/generate",
     element: <Generate />
   },
@@ -23,15 +23,18 @@ const router = createBrowserRouter([
     path: "/qr",
     element: <Qr/>
   },
-    {
+  {
     path: "*",
     element: <NotFound />
   }
-]);
+]
+);
 
 function Router() {
   return (
-    <RouterProvider router={router} />
+    <RouterProvider router={router} future={{
+    v7_startTransition: true,
+  }} />
   )
 }
 

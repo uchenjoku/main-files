@@ -6,3 +6,9 @@ export const trackLinkClick = (linkName) => {
     });
   }
 };
+
+export const trackEvent = (eventName, paramter) => {
+  if (typeof window !== "undefined" && window.gtag) {
+    window.gtag('event', eventName, paramter);
+  }
+};

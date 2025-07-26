@@ -13,7 +13,7 @@ const Generate = () => {
         e.preventDefault();
         if (fullname.trim()) {
             trackEvent('link_shared', {  committee_member: fullname });
-            navigate(`/?fullname=${encodeURIComponent(fullname)}`);
+            navigate(`/qr?fullname=${encodeURIComponent(fullname)}`);
         }
     };
 

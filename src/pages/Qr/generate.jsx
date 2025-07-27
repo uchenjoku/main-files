@@ -28,7 +28,7 @@ const Generate = () => {
     };
 
     return (
-        <Layout title="Welcome" content="tyn-content-page" footer={true}>
+        <Layout title="Welcome | Generate QR Code" content="tyn-content-page" footer={true}>
             <div className="tyn-main">
                 <Container>
                     <Row className="justify-content-center">

@@ -1,5 +1,7 @@
 import React from 'react';
 import DigitalCard from '../../components/QR/DigitalCard';
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
  function Qr() {
 
     // Function to get query param
@@ -11,14 +13,20 @@ import DigitalCard from '../../components/QR/DigitalCard';
 const sharedBy = getQueryParam('fullname') || 'Guest';
 const qrValue = `https://rsvp.amcf.au/?fullname=${encodeURIComponent(sharedBy)}`;
 
-  return (
-    <div>
-        <DigitalCard
-          title="African Music & Cultural Festival 2025"
-      
-        subtitle="Celebrating Diversity and Harmony"
-        qrValue={qrValue} />
-    </div>
+  return (  
+     <HelmetProvider>
+          <Helmet>
+              <title>Generate QR Code | African Music and Cultural Festival</title>
+          </Helmet>
+          <div>
+            <DigitalCard
+              title="African Music & Cultural Festival 2025"
+          
+            subtitle="Celebrating Diversity and Harmony"
+            qrValue={qrValue} />
+        </div>
+        </HelmetProvider>  
+        
   );
 }
 

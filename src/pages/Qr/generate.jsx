@@ -1,18 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {trackEvent} from "../../lib/analytics";
 import Layout from '../../layout/main'
-
+import Cookies from 'js-cookie';
 import {  Col, Container, Row } from 'react-bootstrap';
-
+  
 const Generate = () => {
     const [fullname, setFullname] = useState("");
     const navigate = useNavigate();
+
+    useEffect(() => {
+        const storedFullname = Cookies.get('fullname');
+        if (storedFullname) {
+            setFullname(storedFullname.trim());
+            navigate(`/qr?fullname=${encodeURIComponent(storedFullname)}`, { replace: true });
+        }
+    }, [navigate]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         if (fullname.trim()) {
             trackEvent('link_shared', {  committee_member: fullname });
+            // Store fullname in cookies before redirect
+            Cookies.set('fullname', fullname.trim(), { path: '/', secure: true });
             navigate(`/qr?fullname=${encodeURIComponent(fullname)}`);
         }
     };

@@ -6,10 +6,11 @@ function Footer({className}) {
         "tyn-footer": true,
         [className]: className,
     });
+    const currentYear = new Date().getFullYear();
   return (
     <div className={compClass}>
         <div className="bg-white text-center py-3">
-            <p className="mb-0 small">2025 &copy; African Music and Cultural Festival.</p>
+            <p className="mb-0 small">{currentYear} &copy; African Music and Cultural Festival.</p>
         </div>
     </div>
   )

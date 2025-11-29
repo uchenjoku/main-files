@@ -16,7 +16,7 @@ function Default({title,content, fullscreen, footer, ...props}) {
   return (
     <HelmetProvider>
       <Helmet>
-          <title>{`${title ? title + " | " : '' }2025 | African Music and Cultural Festival`}</title>
+          <title>{`${title ? title + " | " : '' }2026 | African Music and Cultural Festival`}</title>
       </Helmet>
       <AppRoot>     
         <AppContent className={contentClass}>

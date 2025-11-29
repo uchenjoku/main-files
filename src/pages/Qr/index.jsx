@@ -20,7 +20,7 @@ const qrValue = `https://rsvp.amcf.au/?fullname=${encodeURIComponent(sharedBy)}`
           </Helmet>
           <div>
             <DigitalCard
-              title="African Music & Cultural Festival 2025"
+              title="African Music & Cultural Festival 2026"
           
             subtitle="Celebrating Diversity and Harmony"
             qrValue={qrValue} />

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+PRODID:-//AddEvent Inc//AddEvent.com v1.7//EN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Australia/Sydney
+BEGIN:STANDARD
+DTSTART:20260405T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+TZNAME:AEST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20261004T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+TZNAME:AEDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20251129T030939Z
+STATUS:CONFIRMED
+UID:1764385779addeventcom
+SEQUENCE:0
+DTSTART;TZID=Australia/Sydney:20261120T120000
+DTEND;TZID=Australia/Sydney:20261122T200000
+SUMMARY:2026 African Music & Cultural Festival
+DESCRIPTION:Free Event - Join us for a vibrant three-day celebration of African culture at Melbourne’s iconic Federation Square. Showcasing the rich traditions of over 35 African countries and community organisations\, AMCF 2026 brings you the best of Africa through music\, dance\, food\, fashion\, art\, and film.\n \n Experience the infectious rhythms\, flavours\, and spirit of Africa across the festival grounds. Enjoy authentic street food on the River Terrace\, explore bustling market stalls\, and be inspired by powerful live performances on the main stage.\n \n\n\n------\n\nPowered by addevent.com \nShare your next event with us!\n
+X-ALT-DESC;FMTTYPE=text/html:Free Event - Join us for a vibrant three-day celebration of African culture at Melbourne’s iconic Federation Square. Showcasing the rich traditions of over 35 African countries and community organisations, AMCF 2026 brings you the best of Africa through music, dance, food, fashion, art, and film.<br><br>Experience the infectious rhythms, flavours, and spirit of Africa across the festival grounds. Enjoy authentic street food on the River Terrace, explore bustling market stalls, and be inspired by powerful live performances on the main stage.<br><br><br /><br />------<br /><br />Powered by addevent.com <br>Share your next event with us!<br>
+LOCATION:Fed Square Melbourne
+BEGIN:VALARM
+TRIGGER:-PT10080M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
